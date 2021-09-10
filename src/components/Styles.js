@@ -23,8 +23,8 @@ export const ButtonContainer = styled.button`
 
 export const NavWrapper = styled.nav`
     background: var(--mainBlue);
-    position: fixed;
-    z-index: 2;
+    // position: fixed;
+    // z-index: 2;
     width: 100vw;
     .nav-link {
         color: var(--mainWhite) !important;
@@ -81,5 +81,20 @@ export const ProductWrapper = styled.section`
     .cart-btn:hover {
         color: var(--mainBlue);
         cursor: pointer;
+    }
+`
+
+export const ModalContainer = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #modal {
+        background: var(--mainWhite);
     }
 `
